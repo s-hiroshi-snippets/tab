@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang="ja" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-      xmlns="http://www.w3.org/1999/html">
+<html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>JQuery simple tab menu</title>
-<meta name="description" content="jquery plugin template">
-<meta name="keywords" content="dorpdown">
-<link rel="stylesheet" href="style.css" media="all">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script src="tab.js"></script>
-<script>
+    <meta charset="utf-8">
+    <title>jQuery tab menu</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="tab.js"></script>
+    <script>
 jQuery(function($) {
-    $.tab('.test');
+    $.tab('.tab');
 })
 </script>
 </head>
 <body>
-<ul class="test">
-    <li>tab1</li>
-    <li>tab2</li>
-    <li>tab3</li>
+<div class="tab">
+<ul class="tab-menu">
+    <li><a class="active" href="#">tab1</a></li>
+    <li><a href="#">tab2</a></li>
+    <li><a href="#">tab3</a></li>
 </ul>
-<div class="test">aaaaaaaaa</div>
-<div class="test">bbbbbbbbb</div>
-<div class="test">ccccccccc</div>
+<div class="tab-container clearfix">
+    <!-- tab1 content -->
+    <div class="tab-content selected">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        Mauris luctus ligula sed mauris bibendum laoreet. Etiam <br>
+        rhoncus tempor turpis, eget elementum erat facilisis at. Nullam non tortor mauris. Vivamus volutpat aliquam arcu, sit amet volutpat quam egestas non. Nullam ultrices tempus mi, a sodales est hendrerit quis. Nulla velit lorem, tincidunt sed pellentesque ac, ullamcorper ut turpis. Etiam sed dolor eget justo euismod convallis. Nunc vel sapien eu velit euismod gravida ac ac dui. Nullam ac quam erat. Curabitur eu pretium tortor. Cras suscipit, urna id mattis ultricies, justo mi accumsan sapien, in fringilla nisl lorem quis justo.
+
+    </div>
 
 </body>
 </html>

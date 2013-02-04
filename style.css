@@ -1,0 +1,8 @@
+div.tab-content {
+    display: none;
+}
+.selected {
+    display: block !important;
+}
+.thumb {
+}

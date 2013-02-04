@@ -4,8 +4,8 @@
 jQuery.tab = function(name) {
 
     var tab_selector = name || '.tab';
-    var tab_lists = $('li', tab_selector);
-    var tab_contents = $('div' + tab_selector);
+    var tab_anchors  = $('a', tab_selector + '-menu');
+    var tab_contents = $('div' + tab_selector + '-content');
 
     // callback of click event handler
     function clickHandler(index) {
@@ -13,22 +13,25 @@ jQuery.tab = function(name) {
             var  j;
             for (j = 0; j < tab_contents.length; j++) {
                 if (index === j) {
-                    $(tab_lists[j]).addClass('active');
+                    $(tab_anchors[j]).addClass('active');
                     // all tab_contents display none
                     tab_contents.css('display', 'none');
                     // k tab content display
+                    $(tab_contents[j]).addClass('selected');
                     $(tab_contents[j]).css('display', 'block');
                 } else {
-                    $(tab_lists[j]).removeClass('active');
+                    $(tab_anchors[j]).removeClass('active');
+                    $(tab_contents[j]).removeClass('selected');
                 }
             }
+            return false;
         };
     }
 
-    // handle tab menu list click
-    tab_lists.each(function(i) {
+    // handle tab menu anchor click
+    tab_anchors.each(function(i) {
         var handler = clickHandler(i);
-        $(tab_lists[i]).bind('click', handler);
+        $(tab_anchors[i]).click(handler);
     });
 
 };
