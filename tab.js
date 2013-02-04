@@ -13,7 +13,6 @@ jQuery.tab = function(name) {
             var  j;
             for (j = 0; j < tab_contents.length; j++) {
                 if (index === j) {
-                    console.log(j);
                     $(tab_lists[j]).addClass('active');
                     // all tab_contents display none
                     tab_contents.css('display', 'none');
