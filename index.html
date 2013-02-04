@@ -5,29 +5,47 @@
     <title>jQuery tab menu</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
+    <link rel="stylesheet" href="style.css" media="all">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="tab.js"></script>
     <script>
-jQuery(function($) {
-    $.tab('.tab');
-})
-</script>
+        jQuery(function($) {
+            $.tab('.tab');
+        })
+    </script>
 </head>
 <body>
 <div class="tab">
-<ul class="tab-menu">
-    <li><a class="active" href="#">tab1</a></li>
-    <li><a href="#">tab2</a></li>
-    <li><a href="#">tab3</a></li>
-</ul>
-<div class="tab-container clearfix">
+    <ul class="tab-menu">
+        <li><a class="active" href="#">tab1</a></li>
+        <li><a href="#">tab2</a></li>
+        <li><a href="#">tab3</a></li>
+    </ul>
     <!-- tab1 content -->
     <div class="tab-content selected">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
+        Tab1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
         Mauris luctus ligula sed mauris bibendum laoreet. Etiam <br>
-        rhoncus tempor turpis, eget elementum erat facilisis at. Nullam non tortor mauris. Vivamus volutpat aliquam arcu, sit amet volutpat quam egestas non. Nullam ultrices tempus mi, a sodales est hendrerit quis. Nulla velit lorem, tincidunt sed pellentesque ac, ullamcorper ut turpis. Etiam sed dolor eget justo euismod convallis. Nunc vel sapien eu velit euismod gravida ac ac dui. Nullam ac quam erat. Curabitur eu pretium tortor. Cras suscipit, urna id mattis ultricies, justo mi accumsan sapien, in fringilla nisl lorem quis justo.
-
+        rhoncus tempor turpis, eget elementum erat facilisis at.<br>
+        Nullam non tortor mauris. Vivamus volutpat aliquam arcu,<br>
+        sit amet volutpat quam egestas non. Nullam ultrices tempus mi,
     </div>
-
+    <!-- tab2 content -->
+    <div class="tab-content">
+        Tab2 Da sodales est hendrerit quis. Nulla velit lorem, tincidunt sed<br>
+        pellentesque ac, ullamcorper ut turpis. Etiam sed dolor<br>
+        eget justo euismod convallis. Nunc vel sapien eu velit euismod<br>
+        gravida ac ac dui. Nullam ac quam erat. Curabitur eu pretium tortor.<br>
+        Cras suscipit, urna id mattis ultricies, justo mi accumsan sapien
+    </div>
+    <!-- tab3 content -->
+    <div class="tab-content">
+        Tab3 Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>
+        Mauris luctus ligula sed mauris bibendum laoreet.<br>
+        Etiam rhoncus tempor turpis, eget elementum erat facilisis at.<br>
+        Nullam non tortor mauris. Vivamus volutpat aliquam arcu,<br>
+        sit amet volutpat quam egestas non. Nullam ultrices tempus mi,<br>
+        a sodales est hendrerit quis. Nulla velit lorem, tincidunt sed
+    </div>
+</div><!-- tab -->
 </body>
 </html>
