@@ -3,14 +3,14 @@ About
 
 jQuery simple tab menu
 
-This sample is minimul.
-minimum style/script.
-add tab style yourself.
+* this sample is minimul.
+* minimum style/script.
+* add tab style yourself.
 
 Usage
 ==========
 
-load script in head
+load style/script in head
 
 ```html
 <link rel="stylesheet" href="style.css" media="all">
@@ -43,7 +43,7 @@ markup tab menu
 example
 -----
 
-mytab is
+wrap content class name is mytab
 
-    mytab-menu    ul part suffix is -menu
-    mytab-content div part suffix is -content
+* mytab-menu    ul part suffix is -menu
+* mytab-content div part suffix is -content
