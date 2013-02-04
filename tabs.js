@@ -1,34 +1,33 @@
 /**
  * tab menu
  */
-(function() {
-    var navList = $('#page-nav li');
+jQuery.fn.tab = function() {
 
-    // クリックイベントのコールバック関数
-    var clickHandler  = function(i) {
+    var tab_ul_selector = (this.selector !== '') ? this.selector : '';
+    var tab_lists = $('li', tab_ul_selector);
+
+    // callback of click event handler
+    function clickHandler(index) {
         return function() {
-            var parts = $('.part'),
-length = parts.length,
-k;
-for (k = 0; k < length; k++) {
-    if (i === k) {
-        // activeクラスをタブメニューに設定
-        $(navList.get(k)).addClass('active');
-        // タブの表示
-        parts.css('display', 'none');
-        part = parts.get(k);
-        $(part).css('display', 'block');
-
-    } else {
-        $(navList.get(k)).removeClass('active');
+            var  tab_contents = $(tab_ul_selector + '-content-' + index),
+                 length = tab_contents.length,
+                 j;
+            for (j = 0; j < length; j++) {
+                if (index === j) {
+                    tab_lists[j].addClass('active');
+                    // all tab_contents display none
+                    tab_contents.css('display', 'none');
+                    // k tab content display
+                    tab_contents[j].css('display', 'block');
+                } else {
+                    tab_lists[j].removeClass('active');
+                }
+            }
+        };
     }
-}
-};
-};
 
-// クライアント用マイページのタブ切替
-navList.each(function(i) {
-    var callbackfunc = clickHandler(i);
-    var listItem = navList.get(i);
-    $(listItem).click(callbackfunc);
-});
+    // handle tab menu list click
+    tab_lists.each(function(i) {
+        tab_lists[i].click(clickHandler(i));
+    });
+};
