@@ -30,4 +30,5 @@ jQuery.tab = function(name) {
         var handler = clickHandler(i);
         $(tab_lists[i]).bind('click', handler);
     });
+
 };
