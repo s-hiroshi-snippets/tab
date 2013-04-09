@@ -3,7 +3,7 @@ About
 
 jQuery simple tab menu
 
-* this sample is minimul.
+* this sample is minimal.
 * minimum style/script.
 * add tab style yourself.
 
@@ -27,7 +27,7 @@ markup tab menu
 
 ```html
 <div class="tab">
-    <ul class="tab-menue">
+    <ul class="tab-menu">
         <li><a href="#" class="active">tab1</ul>
         <li><a href="#">tab2</ul>
     </ul>
