@@ -47,3 +47,4 @@ wrap content class name is mytab
 
 * mytab-menu    ul part suffix is -menu
 * mytab-content div part suffix is -content
+
