@@ -1,6 +1,6 @@
 /**
  * tab menu
- * tab.jsをbootstrap用に書き直し
+ * tab.jsをbootstrap用に書き直した。
  */
 jQuery.tab = function( name ) {
 
