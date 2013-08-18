@@ -17,7 +17,7 @@
  * markup tab menu
  *
  *```html
- *<div class="tab">
+ *<div id="tab">
  *<ul class="tab-menu">
  *<li><a href="#" class="active">tab1</ul>
  *<li><a href="#">tab2</ul>
